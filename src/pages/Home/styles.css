@@ -1,0 +1,324 @@
+@import '../../styles/variables.css';
+
+.container {
+  position: relative;
+  width: 65rem;
+  margin: auto;
+  padding-top: 4.06rem;
+  display: flex;
+  flex-direction: column;
+  color: var(--title-color);
+}
+
+.main-title {
+  color: var(--title-color);
+  text-align: center;
+  font-size: 2.25rem;
+}
+
+.btn-criar-conexoes {
+  display: none;
+}
+
+.card-container {
+  position: relative;
+  width: 100%;
+  margin-top: 3.50rem;
+  display: flex;
+  gap: 0.75rem;
+  justify-content: space-between;
+}
+
+.carousel-container {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 1rem 0;
+  margin-top: 3.50rem;
+}
+
+.card-container {
+  display: flex;
+}
+
+.carousel-container::-webkit-scrollbar {
+  height: 0.6rem;
+}
+
+.carousel-container::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 0.8rem;
+}
+
+.card-carousel {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+}
+
+.user-image {
+  width: 8rem;
+  height: 8rem;
+  object-fit: cover;
+}
+
+.user-name {
+  margin-top: 1.3rem;
+  font-weight: bold;
+}
+
+.user-area {
+  color: var(--description-color);
+  margin-top: 0.4rem;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.user-afinidade {
+  color: var(--text-color);
+  margin-top: 2rem;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+span {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+progress {
+  margin-top: 1rem;
+  width: 12rem;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-radius: 0.6rem;
+  background-color: #eee;
+  height: 0.5rem;
+}
+
+progress::-webkit-progress-bar {
+  border-radius: 10px;
+}
+
+progress::-webkit-progress-value {
+  background-color: var(--primary-color);
+  border-radius: 0.8rem;
+}
+
+progress::-moz-progress-bar {
+  background-color: var(--primary-color);
+}
+
+.btn-container {
+  margin-top: 1.84rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1.3rem;
+}
+
+.btn-descartar {
+  padding: 0.8rem 1.2rem 0.8rem 1.2rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--border-card-color);
+  background: none;
+  color: #e94444;
+  border: 1px solid #e94444;
+  font-size: 1.1rem;
+}
+
+.card-descartado {
+  opacity: 0;
+  transform: translateY(-20px); 
+  transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+}
+
+.btn-descartar.conectado {
+  display: none;
+}
+
+.btn-conectar {
+  padding: 0.8rem 1.2rem 0.8rem 1.2rem;
+  border-radius: 0.5rem;
+  background: var(--primary-color);
+  border: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.btn-conectar.conectado {
+  background-color: #dee2e6;
+  color: #495057;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn-mostrar-mais {
+  width: 20%;
+  margin: 0 auto;
+  margin-top: 3rem;
+  padding: 0.8rem 1rem 0.8rem 1rem;
+  color: black;
+  background-color: var(--primary-color);
+  border: none;
+}
+
+.btn-mostrar-mais:hover {
+  cursor: pointer;
+}
+
+.mensagem-sem-conexao {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.notificacao {
+  position: fixed;
+  top: 20px;
+  right: 10px;
+  background: #02940e;
+  color: white;
+  padding: 15px 30px;
+  font-size: 16px;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+  animation: fadein 0.3s ease-in-out, fadeout 3s 3s forwards;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 300px;
+  overflow: hidden;
+}
+
+.notificacao p {
+  margin: 0;
+  font-weight: 500;
+  text-align: center;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeout {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+
+.notificacao .progress-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.3);
+  animation: progress 3s linear forwards;
+}
+
+@keyframes progress {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+@media (max-width: 1050px) {
+  .main-title {
+    width: 50%;
+    font-size: 3rem;
+  }
+
+  .btn-criar-conexoes {
+    display: flex;
+    margin-top: 3rem;
+    width: 80%;
+    border-radius: 0.8rem;
+    background-color: var(--primary-color);
+    border: none;
+    color: black;
+    justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  .container {
+    align-items: center;
+    width: 100%;
+  }
+
+  .card-container {
+    width: 100%;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+
+  .user-image {
+    width: 14rem;
+    height: 14rem;
+    object-fit: cover;
+  }
+
+  .user-name {
+    font-size: 2.3rem;
+    margin-top: 2rem;
+  }
+
+  .user-area {
+    font-size: 2rem;
+  }
+
+  .user-afinidade {
+    font-size: 2rem;
+  }
+
+  .btn-container {
+    margin-top: 3rem;
+  }
+
+  .btn-descartar {
+    padding: 0.8rem 1rem 0.8rem 1rem;
+    font-size: 2rem;
+  }
+
+  .btn-conectar {
+    padding: 0.8rem 1rem 0.8rem 1rem;
+    font-size: 2rem;
+    color: black;
+  }
+
+  progress {
+    width: 21rem;
+    height: 1rem;
+  }
+
+  .mensagem-sem-conexao {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 5rem;
+  }
+}

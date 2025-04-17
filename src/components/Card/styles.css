@@ -1,0 +1,22 @@
+@import "../../styles/variables.css";
+
+.user-card {
+  position: relative;
+  width: 18.94rem;
+  background-color: var(--card-background);
+  border: 1px solid var(--border-card-color);
+  border-radius: 0.31rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+@media (max-width: 1050px) {
+  .user-card {
+    border-radius: 1rem;
+    width: 27rem;
+  }
+
+}
