@@ -1,46 +1,51 @@
-# Getting Started with Create React App
+# Desafio Full Stack - LEGAL.AI
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Descrição do Desafio
 
-## Available Scripts
+O desafio consiste na criação de um Mini MVP de Match Inteligente, onde o objetivo é criar uma tela funcional de um sistema de matchmaking que conecta pessoas com base em afinidade. Não é necessário implementar uma inteligência artificial real, mas sim simular a experiência de matchmaking com dados fictícios.
 
-In the project directory, you can run:
+## Funcionalidades Implementadas
 
-### `npm start`
+A aplicação conta com as seguintes funcionalidades:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **Formulário de Busca**: 3 campos para preencher com **Nome**, **Área de Interesse** e **Localização**.
+- **Botão “Buscar Conexões”**: Ao clicar no botão, a aplicação simula a busca de conexões baseadas nos dados inseridos no formulário.
+- **Exibição de Resultados**: Exibição de até 3 resultados com **Nome**, **Área de Interesse** e **Nível de Afinidade** (ex: 78%).
+- **Interação com os Resultados**: Botões para **Descartar** ou **Conectar** com os resultados simulados.
+- **Notificação de Conexão**: Após clicar em "Conectar", o usuário recebe uma notificação de "Solicitação Enviada".
+  
+## Decisões Tomadas
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- **Tecnologia Utilizada**: A aplicação foi desenvolvida utilizando **React** para garantir uma interface dinâmica e responsiva.
+- **Organização do Código**: O código foi estruturado de forma modular, com componentes reutilizáveis para garantir escalabilidade e manutenção facilitada.
+- **Responsividade**: A interface foi construída para ser totalmente responsiva, adaptando-se tanto para desktop quanto para dispositivos móveis.
+- **Simulação de Afinidade**: A afinidade é calculada de forma simples, utilizando um valor fixo, para simular a lógica de matchmaking.
 
-### `npm test`
+## O que eu faria diferente se tivesse mais tempo?
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Implementação de uma IA Real**: Com mais tempo, eu implementaria uma inteligência artificial real para calcular a afinidade entre os usuários, baseando-se em suas preferências e histórico de interações.
+- **Persistência de Dados**: Adicionaria um backend simples para armazenar os dados dos usuários e suas conexões, permitindo que a aplicação fosse mais dinâmica e persistente.
+- **Melhoria na Interface (UI/UX)**: Investiria mais tempo aprimorando o design da interface, incluindo animações e transições mais sofisticadas para melhorar a experiência do usuário.
 
-### `npm run build`
+## Instruções para Rodar o Projeto
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Requisitos
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Node.js** (versão recomendada: 14.x ou superior)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Passos
 
-### `npm run eject`
+1. Clone este repositório para sua máquina local:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+   ```bash
+   git clone https://github.com/giovannebraga10/Match-Inteligente.git
+   
+2. Navegue até a pasta do projeto e execute o comando NPM
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```bash
+  npm install
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+2. Inicie o projeto
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+   ```bash
+  npm start
