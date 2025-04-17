@@ -36,8 +36,8 @@ A aplicação conta com as seguintes funcionalidades:
    
 2. Navegue até a pasta do projeto e execute o comando NPM
    ```bash
-  npm install
+   npm install
 
 2. Inicie o projeto
    ```bash
-  npm start
+   npm start
