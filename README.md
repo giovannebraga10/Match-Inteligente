@@ -1,8 +1,3 @@
-# Desafio Full Stack - LEGAL.AI
-
-## Descrição do Desafio
-
-O desafio consiste na criação de um Mini MVP de Match Inteligente, onde o objetivo é criar uma tela funcional de um sistema de matchmaking que conecta pessoas com base em afinidade. Não é necessário implementar uma inteligência artificial real, mas sim simular a experiência de matchmaking com dados fictícios.
 
 ## Funcionalidades Implementadas
 
@@ -22,7 +17,7 @@ A aplicação conta com as seguintes funcionalidades:
 - **Simulação de Afinidade**: A afinidade é calculada de forma simples, utilizando um valor fixo, para simular a lógica de matchmaking.
 
 ## O que eu faria diferente se tivesse mais tempo?
-
+- **Implementação do backend**:  Decidi não incluir o backend para manter as caracteristicas e não perder a simplicidade do MVP, garantindo uma solução mais enxuta e focada em uma mais entrega rápida. 
 - **Implementação de uma IA Real**: Com mais tempo, eu implementaria uma inteligência artificial real para calcular a afinidade entre os usuários, baseando-se em suas preferências e histórico de interações.
 - **Persistência de Dados**: Adicionaria um backend simples para armazenar os dados dos usuários e suas conexões, permitindo que a aplicação fosse mais dinâmica e persistente.
 - **Melhoria na Interface (UI/UX)**: Investiria mais tempo aprimorando o design da interface, incluindo animações e transições mais sofisticadas para melhorar a experiência do usuário.
@@ -36,16 +31,13 @@ A aplicação conta com as seguintes funcionalidades:
 ### Passos
 
 1. Clone este repositório para sua máquina local:
-
    ```bash
    git clone https://github.com/giovannebraga10/Match-Inteligente.git
    
 2. Navegue até a pasta do projeto e execute o comando NPM
-
    ```bash
   npm install
 
 2. Inicie o projeto
-
    ```bash
   npm start
