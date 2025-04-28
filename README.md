@@ -16,7 +16,7 @@ A aplicação conta com as seguintes funcionalidades:
 - **Responsividade**: A interface foi construída para ser totalmente responsiva, adaptando-se tanto para desktop quanto para dispositivos móveis.
 - **Simulação de Afinidade**: A afinidade é calculada de forma simples, utilizando um valor fixo, para simular a lógica de matchmaking.
 
-## O que eu faria diferente se tivesse mais tempo?
+## Melhorias futuras
 - **Implementação do backend**:  Decidi não incluir o backend para manter as caracteristicas e não perder a simplicidade do MVP, garantindo uma solução mais enxuta e focada em uma mais entrega rápida. 
 - **Implementação de uma IA Real**: Com mais tempo, eu implementaria uma inteligência artificial real para calcular a afinidade entre os usuários, baseando-se em suas preferências e histórico de interações.
 - **Persistência de Dados**: Adicionaria um backend simples para armazenar os dados dos usuários e suas conexões, permitindo que a aplicação fosse mais dinâmica e persistente.
